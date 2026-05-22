@@ -1,0 +1,11 @@
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/bin/Debug/net8.0/TodoApp.Domain.deps.json
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/bin/Debug/net8.0/TodoApp.Domain.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/bin/Debug/net8.0/TodoApp.Domain.pdb
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.AssemblyInfoInputs.cache
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.AssemblyInfo.cs
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.csproj.CoreCompileInputs.cache
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/refint/TodoApp.Domain.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/TodoApp.Domain.pdb
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Domain/obj/Debug/net8.0/ref/TodoApp.Domain.dll

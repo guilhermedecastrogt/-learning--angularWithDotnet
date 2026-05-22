@@ -1,0 +1,54 @@
+<div class="container">
+  <header>
+    <h1>Lista de Tarefas</h1>
+    @if (todos().length > 0) {
+      <span class="badge">{{ pending }} pendente{{ pending !== 1 ? 's' : '' }}</span>
+    }
+  </header>
+
+  <app-todo-form
+    [editingTodo]="editingTodo()"
+    (submitted)="editingTodo() ? onUpdate($event) : onCreate($event)"
+    (cancelled)="cancelEdit()"
+  />
+
+  @if (error()) {
+    <div class="error">{{ error() }}</div>
+  }
+
+  @if (loading()) {
+    <p class="loading">Carregando...</p>
+  } @else if (todos().length === 0) {
+    <p class="empty">Nenhuma tarefa ainda. Adicione uma acima!</p>
+  } @else {
+    <ul class="todo-list">
+      @for (todo of todos(); track todo.id) {
+        <li class="todo-item" [class.completed]="todo.isCompleted">
+          <div class="todo-main">
+            <input
+              type="checkbox"
+              [checked]="todo.isCompleted"
+              (change)="onToggle(todo.id)"
+              [attr.aria-label]="'Marcar ' + todo.title"
+            />
+            <div class="todo-content">
+              <span class="todo-title">{{ todo.title }}</span>
+              @if (todo.description) {
+                <span class="todo-desc">{{ todo.description }}</span>
+              }
+              <span class="todo-date">Criado em {{ todo.createdAt | date: 'dd/MM/yyyy HH:mm' }}</span>
+            </div>
+          </div>
+          <div class="todo-actions">
+            <button class="btn btn-edit" (click)="startEdit(todo)" [disabled]="todo.isCompleted">
+              Editar
+            </button>
+            <button class="btn btn-delete" (click)="onDelete(todo.id)">
+              Excluir
+            </button>
+          </div>
+        </li>
+      }
+    </ul>
+  }
+</div>

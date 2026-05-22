@@ -1,0 +1,15 @@
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/bin/Debug/net8.0/TodoApp.Infrastructure.deps.json
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/bin/Debug/net8.0/TodoApp.Infrastructure.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/bin/Debug/net8.0/TodoApp.Infrastructure.pdb
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/bin/Debug/net8.0/TodoApp.Domain.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/bin/Debug/net8.0/TodoApp.Domain.pdb
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.csproj.AssemblyReference.cache
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.AssemblyInfoInputs.cache
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.AssemblyInfo.cs
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.csproj.CopyComplete
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/refint/TodoApp.Infrastructure.dll
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/TodoApp.Infrastructure.pdb
+/Users/guilhermedecastro/Documents/cvs/angular/backend/TodoApp.Infrastructure/obj/Debug/net8.0/ref/TodoApp.Infrastructure.dll

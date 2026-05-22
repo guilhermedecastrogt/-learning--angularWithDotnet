@@ -1,0 +1,39 @@
+<form class="todo-form" (ngSubmit)="onSubmit()">
+  <h2>{{ editingTodo() ? 'Editar tarefa' : 'Nova tarefa' }}</h2>
+
+  <div class="field">
+    <label for="title">Título *</label>
+    <input
+      id="title"
+      type="text"
+      [ngModel]="title()"
+      (ngModelChange)="title.set($event)"
+      name="title"
+      placeholder="O que precisa ser feito?"
+      required
+    />
+  </div>
+
+  <div class="field">
+    <label for="description">Descrição</label>
+    <textarea
+      id="description"
+      [ngModel]="description()"
+      (ngModelChange)="description.set($event)"
+      name="description"
+      placeholder="Detalhes opcionais..."
+      rows="2"
+    ></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary" [disabled]="!title().trim()">
+      {{ editingTodo() ? 'Salvar' : 'Adicionar' }}
+    </button>
+    @if (editingTodo()) {
+      <button type="button" class="btn btn-secondary" (click)="onCancel()">
+        Cancelar
+      </button>
+    }
+  </div>
+</form>
