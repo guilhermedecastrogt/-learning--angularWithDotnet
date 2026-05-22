@@ -1,45 +1,45 @@
-# Todo App — Estudo Full Stack (.NET + Angular)
+# Todo App — Full Stack Study (.NET + Angular)
 
-Projeto de estudo para explorar a integração entre **ASP.NET Core Web API** e **Angular**, aplicando os conceitos de **Domain-Driven Design (DDD)** em um CRUD simples de lista de tarefas.
+A study project to explore the integration between **ASP.NET Core Web API** and **Angular**, applying **Domain-Driven Design (DDD)** concepts in a simple to-do list CRUD application.
 
-## Objetivo
+## Goal
 
-Entender na prática como o .NET e o Angular se comunicam via HTTP, como organizar um backend com DDD em camadas, e como consumir uma API REST no Angular usando `HttpClient`.
+Understand in practice how .NET and Angular communicate over HTTP, how to organize a backend using DDD layers, and how to consume a REST API in Angular with `HttpClient`.
 
 ## Stack
 
 - **Backend:** ASP.NET Core 8 Web API + Entity Framework Core (InMemory)
 - **Frontend:** Angular 19 (standalone components, signals)
-- **Arquitetura:** Domain-Driven Design (Domain / Application / Infrastructure / API)
+- **Architecture:** Domain-Driven Design (Domain / Application / Infrastructure / API)
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 backend/
-  TodoApp.Domain/         # Entidades e interfaces de repositório
-  TodoApp.Application/    # DTOs e serviços de aplicação
-  TodoApp.Infrastructure/ # EF Core + implementação do repositório
-  TodoApp.API/            # Controllers e configuração da API
+  TodoApp.Domain/         # Entities and repository interfaces
+  TodoApp.Application/    # DTOs and application services
+  TodoApp.Infrastructure/ # EF Core + repository implementation
+  TodoApp.API/            # Controllers and API setup
 
 frontend/todo-app/
   src/app/
-    models/               # Interfaces TypeScript
-    services/             # TodoService com HttpClient
+    models/               # TypeScript interfaces
+    services/             # TodoService with HttpClient
     components/
-      todo-form/          # Formulário de criação e edição
-      todo-list/          # Lista com todas as operações
+      todo-form/          # Create and edit form
+      todo-list/          # List with all CRUD operations
 ```
 
-## Como rodar
+## Running the Project
 
-### Backend (porta 5000)
+### Backend (port 5000)
 
 ```bash
 cd backend
 dotnet run --project TodoApp.API/TodoApp.API.csproj --urls http://localhost:5000
 ```
 
-### Frontend (porta 4200)
+### Frontend (port 4200)
 
 ```bash
 cd frontend/todo-app
@@ -47,23 +47,23 @@ npm install
 npx ng serve
 ```
 
-Acesse: [http://localhost:4200](http://localhost:4200)
+Open: [http://localhost:4200](http://localhost:4200)
 
-## Endpoints da API
+## API Endpoints
 
-| Método | Rota | Ação |
-|--------|------|------|
-| GET | `/api/todo` | Listar todas as tarefas |
-| GET | `/api/todo/{id}` | Buscar por ID |
-| POST | `/api/todo` | Criar tarefa |
-| PUT | `/api/todo/{id}` | Atualizar tarefa |
-| PATCH | `/api/todo/{id}/toggle` | Marcar/desmarcar como concluída |
-| DELETE | `/api/todo/{id}` | Excluir tarefa |
+| Method | Route | Action |
+|--------|-------|--------|
+| GET | `/api/todo` | List all tasks |
+| GET | `/api/todo/{id}` | Get by ID |
+| POST | `/api/todo` | Create task |
+| PUT | `/api/todo/{id}` | Update task |
+| PATCH | `/api/todo/{id}/toggle` | Toggle completed status |
+| DELETE | `/api/todo/{id}` | Delete task |
 
-## Conceitos estudados
+## Concepts Covered
 
-- Separação de responsabilidades em camadas (DDD)
-- Entidade rica com comportamentos encapsulados
-- Inversão de dependência com interfaces e injeção de dependência
-- Comunicação HTTP entre Angular e .NET com CORS configurado
-- Signals e standalone components no Angular 19
+- Layer separation with DDD (Domain, Application, Infrastructure, API)
+- Rich domain entity with encapsulated behavior
+- Dependency inversion with interfaces and dependency injection
+- HTTP communication between Angular and .NET with CORS
+- Signals and standalone components in Angular 19
